@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<!-- IE Meta -->
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <!-- first mobile meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='css/fullcalendar.min.css' rel='stylesheet' />
+	<link href='css/fullcalendar.print.min.css' rel='stylesheet' media='print' />
+	 <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+	<!-- Start navBar -->
+		<nav class="navbar  navbar-inverse navbar-fixed">
+		  <div class="container">
+		   
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="" target="blank"><img src="images/logo.png"></a>
+		    </div>
+		    	 <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter Key Words"z>
+        </div>
+       
+      </form>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+				      <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+		            <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></i></a></li>
+		            <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+		            <li><a href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
+		            <li><a href="#"><i class="fa fa-life-ring" aria-hidden="true"></i></a></li>
+		       
+			        <li><a href="#">lock
+			       		 <i class="fa fa-lock" aria-hidden="true"></i>
+			       		 </a>
+			        </li>
+		     </ul>
+		      
+		    </div><!-- End of navbar-collapse -->
+		  </div><!-- End of container-fluid -->
+		</nav>
+
+		<!-- End navBar -->
+		
+
+
+		<!-- Start icons -->
+		<div class="icons">
+			<ul>
+				<li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-print" aria-hidden="true"></i></a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+				
+			</ul>
+		</div>
+
+		<!-- End icons -->
+
+	<div class="container">
+	<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Course-Attendance')" id="defaultOpen">Course Attendance</button>
+  <button class="tablinks" onclick="openCity(event, 'session-list')" >Class Session List</button>
+  <button class="tablinks" onclick="openCity(event, 'Mark-Attendance')">Mark Attendance</button>
+  <button class="tablinks" onclick="openCity(event, 'Check-Attendance')">Check Attendance</button>
+</div>
+	
+			<div id="Course-Attendance" class="tabcontent">
+			 
+			         <div class="form">  
+			          <input type="text" class="form-control">
+			          <i class="fa fa-search" aria-hidden="true"></i>
+			  		</div>
+			  		<div class="course">
+			  		     <div class="row">
+			  		    	
+				  		     	<div class="left col-md-5 col-sm-5 col-xs-12">
+				  		     		<p>New Castel College-Balroom Dance</p>
+				  		     		<p class="location">Tutor:Nell Patel &nbsp Location:London</p>
+				  		     	</div>
+				  		     	<div class="med col-md-5 col-sm-5 col-xs-12">
+				  		  			<p>Start Date:<span>30-Nov-2016 </span>&nbsp End Date:<span>30-Nov-2017</span></p>   		
+				  		  			<p>Price:100.00 &nbsp  &nbsp Batch Size:25 &nbsp  &nbsp Sessions:20</p>
+				  		     	</div>
+				  		     	<div class="right col-md-2 col-sm-2 col-xs-12">
+				  		     		<button>CLASS LIST</button>
+				  		     	</div>
+			  		     </div>
+			 		 </div>
+			  			
+			  			<div class="course">
+			  		    	 <div class="row">
+			  		     		<div class="left col-md-5 col-sm-5 col-xs-12">
+			  		     		<p>Long course title:Lorem ipsum dolor sit amet, consectetur</p>
+			  		     		<p class="location">Tutor:Nell Patel &nbsp Location:London</p>
+			  		     	</div>
+			  		     	<div class="med col-md-5 col-sm-5 col-xs-12">
+			  		  			<p>Start Date:<span>30-Nov-2016 </span>&nbsp End Date:<span>30-Nov-2017</span></p>   		
+			  		  			<p>Price:100.00 &nbsp  &nbsp Batch Size:25 &nbsp  &nbsp Sessions:20</p>
+			  		     	</div>
+			  		     	<div class="right col-md-2 col-sm-2 col-xs-12">
+			  		     		<button>CLASS LIST</button>
+			  		     	</div>
+			  		     </div>
+			  </div>
+			  	
+			  		<div class="course">
+			  		     <div class="row">
+			  		    	
+				  		     	<div class="left col-md-5 col-sm-5 col-xs-12">
+				  		     		<p>New Castel College-Balroom Dance</p>
+				  		     		<p class="location">Tutor:Nell Patel &nbsp Location:London</p>
+				  		     	</div>
+				  		     	<div class="med col-md-5 col-sm-5 col-xs-12">
+				  		  			<p>Start Date:<span>30-Nov-2016 </span>&nbsp End Date:<span>30-Nov-2017</span></p>   		
+				  		  			<p>Price:100.00 &nbsp  &nbsp Batch Size:25 &nbsp  &nbsp Sessions:20</p>
+				  		     	</div>
+				  		     	<div class="right col-md-2 col-sm-2 col-xs-12">
+				  		     		<button>CLASS LIST</button>
+				  		     	</div>
+			  		     </div>
+			 		 </div>
+			  			
+			  			<div class="course">
+			  		    	 <div class="row">
+			  		     		<div class="left col-md-5 col-sm-5 col-xs-12">
+			  		     		<p>Long course title:Lorem ipsum dolor sit amet, consectetur</p>
+			  		     		<p class="location">Tutor:Nell Patel &nbsp Location:London</p>
+			  		     	</div>
+			  		     	<div class="med col-md-5 col-sm-5 col-xs-12">
+			  		  			<p>Start Date:<span>30-Nov-2016 </span>&nbsp End Date:<span>30-Nov-2017</span></p>   		
+			  		  			<p>Price:100.00 &nbsp  &nbsp Batch Size:25 &nbsp  &nbsp Sessions:20</p>
+			  		     	</div>
+			  		     	<div class="right col-md-2 col-sm-2 col-xs-12">
+			  		     		<button>CLASS LIST</button>
+			  		     	</div>
+			  		     </div>
+			  </div>
+			  <a href="#">+ More</a>
+			</div>
+
+<div id="session-list" class="tabcontent">
+  	<div class="row">
+  		<div class="col-md-6 col-sm-6 col-xs-12"></div>
+	  		<div class="left col-md-6 col-sm-6 col-xs-12">
+	  			<div class="right">
+	  			<div class="row">
+	  				<div class="col-md-4 col-sm-4 col-xs-12">
+	  					<p>20-July-17 <br>
+	  					<span>Monday-12:00</span></p>
+	  				</div>
+	  				<div class="col-md-4 col-sm-4 col-xs-12">
+	  					<h3>Student List</h3>
+	  				</div>
+	  				<div class="col-md-4 col-sm-4 col-xs-12">
+	  					<button>REPORT</button>		
+	  				</div>
+	  			</div>
+	  			</div>
+	  			<div class="right">
+	  			<div class="row">
+	  				<div class="col-md-4 col-sm-4 col-xs-12">
+	  					<p>25-July-17 <br>
+	  					<span>Monday-12:00</span></p>
+	  				</div>
+	  				<div class="col-md-4 col-sm-4 col-xs-12">
+	  					<h3>Student List</h3>
+	  				</div>
+	  				<div class="col-md-4 col-sm-4 col-xs-12">
+	  					<button>REPORT</button>		
+	  				</div>
+	  			</div>
+	  			</div>
+	  			<div class="right">
+	  			<div class="row">
+	  				<div class="col-md-4 col-sm-4 col-xs-12">
+	  					<p>27-July-17 <br>
+	  					<span>Monday-12:00</span></p>
+	  				</div>
+	  				<div class="col-md-4 col-sm-4 col-xs-12">
+	  					<h3>Student List</h3>
+	  				</div>
+	  				<div class="col-md-4 col-sm-4 col-xs-12">
+	  					<button>REPORT</button>		
+	  				</div>
+	  			</div>
+	  			</div>
+	  			<div class="right">
+	  			<div class="row">
+	  				<div class="col-md-4 col-sm-4 col-xs-12">
+	  					<p>29-July-17 <br>
+	  					<span>Monday-12:00</span></p>
+	  				</div>
+	  				<div class="col-md-4 col-sm-4 col-xs-12">
+	  					<h3>Student List</h3>
+	  				</div>
+	  				<div class="col-md-4 col-sm-4 col-xs-12">
+	  					<button>REPORT</button>		
+	  				</div>
+	  			</div>
+	  			</div><a href="#">+ More</a>
+  		</div>
+  	</div>
+
+</div>
+			<div id="Mark-Attendance" class="tabcontent">
+				  <div class="attendance">
+				  <div class="row text-center">
+				  		<div class="left col-md-6 col-xs-12">
+				  		<h3>Drumming</h3>
+				  		</div>
+				  		<div class="right col-md-6 col-xs-12">
+				  			<div class="row">
+				  				<div class="lb col-md-4 col-xs-12">
+				  					<img src="images/p.jpg" >
+				  				</div>
+				  				<div class="mb col-md-4 col-xs-12">
+				  					<h4>student 1</h4><br>
+				  						<button>Yes</button>
+				  						<button>No</button>
+				  				</div>
+				  				<div class="rb col-md-4 col-xs-12">
+				  					 <label><input type="checkbox" value=""> Late</label>
+				  					 <br>
+				  					<button>COMMENT</button>
+				  				</div>
+				  			</div>
+				  		</div>
+				  </div>
+				 </div>
+				 <div class="attendance">
+				  <div class="row text-center">
+				  		<div class="l right col-md-6 col-xs-12">
+				  		<div class="row">
+				  				<div class="lb col-md-4 col-xs-12">
+				  					<img src="images/p.jpg" >
+				  				</div>
+				  				<div class="mb col-md-4 col-xs-12">
+				  					<h4>student 1</h4><br>
+				  						<button>Yes</button>
+				  						<button>No</button>
+				  				</div>
+				  				<div class="rb col-md-4 col-xs-12">
+				  					 <label><input type="checkbox" value=""> Late</label>
+				  					 <br>
+				  					<button>COMMENT</button>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<div class="right col-md-6 col-xs-12">
+				  			<div class="row">
+				  				<div class="lb col-md-4 col-xs-12">
+				  					<img src="images/p.jpg" >
+				  				</div>
+				  				<div class="mb col-md-4 col-xs-12">
+				  					<h4>student 1</h4><br>
+				  						<button>Yes</button>
+				  						<button>No</button>
+				  				</div>
+				  				<div class="rb col-md-4 col-xs-12">
+				  					 <label><input type="checkbox" value=""> Late</label>
+				  					 <br>
+				  					<button>COMMENT</button>
+				  				</div>
+				  			</div>
+				  		</div>
+				  </div>
+				 </div>
+				 <div class="attendance">
+				  <div class="row text-center">
+				  		<div class="l right col-md-6 col-xs-12">
+				  		<div class="row">
+				  				<div class="lb col-md-4 col-xs-12">
+				  					<img src="images/p.jpg" >
+				  				</div>
+				  				<div class="mb col-md-4 col-xs-12">
+				  					<h4>student 1</h4><br>
+				  						<button>Yes</button>
+				  						<button>No</button>
+				  				</div>
+				  				<div class="rb col-md-4 col-xs-12">
+				  					 <label><input type="checkbox" value=""> Late</label>
+				  					 <br>
+				  					<button>COMMENT</button>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<div class="right col-md-6 col-xs-12">
+				  			<div class="row">
+				  				<div class="lb col-md-4 col-xs-12">
+				  					<img src="images/p.jpg" >
+				  				</div>
+				  				<div class="mb col-md-4 col-xs-12">
+				  					<h4>student 1</h4><br>
+				  						<button>Yes</button>
+				  						<button>No</button>
+				  				</div>
+				  				<div class="rb col-md-4 col-xs-12">
+				  					 <label><input type="checkbox" value=""> Late</label>
+				  					 <br>
+				  					<button>COMMENT</button>
+				  				</div>
+				  			</div>
+				  		</div>
+				  </div>
+				 </div>
+
+			</div>
+<div id="Check-Attendance" class="tabcontent">
+ <div class="container">
+		<div class="row">
+			<div class="col-md-5 col-sm-5 col-xs-12">
+				<div class="text-center">
+					<h2>Courses List</h2>
+					<div class="course" id="myBtn">
+						<h4>New Castel College - Balroom Dance</h4>
+						<h4>
+							<span class="color1">Tutor: Nell Patel</span>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<span class="color1">Location: London</span>
+						</h4>
+						<h6>
+							<span class="normal">Starte Date:</span>
+							<span class="bold">30-NOV-2016</span>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<span class="normal">End Date:</span>
+							<span class="bold">30-NOV-2017</span>
+						</h6>
+						<h6>Price:100.00 &nbsp;&nbsp;&nbsp;&nbsp;Batch Size: 25&nbsp;&nbsp;&nbsp;&nbsp;Sessions: 20</h6>
+					</div>
+					<div class="course" id="myBtn2">
+						<h4>Long Courses Title: lorem Ipsum dolor sita-met, consectetur...</h4>
+						<h4>
+							<span class="color1">Tutor: Nell Patel</span>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<span class="color1">Location: London</span>
+						</h4>
+						<h6>
+							<span class="normal">Starte Date:</span>
+							<span class="bold">30-NOV-2016</span>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<span class="normal">End Date:</span>
+							<span class="bold">30-NOV-2017</span>
+						</h6>
+						<h6>Price:100.00 &nbsp;&nbsp;&nbsp;&nbsp;Batch Size: 25&nbsp;&nbsp;&nbsp;&nbsp;Sessions: 20</h6>
+					</div>
+					<div class="course lastCourse" id="myBtn3">
+						<h4>Long Courses Title: lorem Ipsum dolor sita-met, consectetur...</h4>
+						<h4>
+							<span class="color1">Tutor: Nell Patel</span>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<span class="color1">Location: London</span>
+						</h4>
+						<h6>
+							<span class="normal">Starte Date:</span>
+							<span class="bold">30-NOV-2016</span>
+							&nbsp;&nbsp;&nbsp;&nbsp;
+							<span class="normal">End Date:</span>
+							<span class="bold">30-NOV-2017</span>
+						</h6>
+						<h6>Price:100.00 &nbsp;&nbsp;&nbsp;&nbsp;Batch Size: 25&nbsp;&nbsp;&nbsp;&nbsp;Sessions: 20</h6>
+					</div>	
+				</div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+				  <!-- Modal content -->
+				  <div class="modal-content">
+				    <div class="modal-body">
+				    	<span class="close">&times;</span><br>
+				    	<span>
+				    		<img src="http://via.placeholder.com/100x100" class="circle">
+				    	</span>
+				    	<span>
+				      		<h2 class="pink">Mary Smith</h2>
+				   			<h5>123-456-789</h5>
+				   			<h5>marysmithgmail.com</h5>	
+				      	</span>
+				    	<h6 class="color1 bold" style="padding-left: 20px;">User 1</h6>				    				     	
+				    </div>
+				  </div>
+				</div>
+			</div>	
+			<div class="col-md-7 col-sm-7 col-xs-12">
+									
+			</div>
+		</div>
+	</div>    
+
+</div>
+       </div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src='js/moment.min.js'></script>
+<script src='js/jquery.min.js'></script>
+<script src='js/fullcalendar.min.js'></script>
+<script src="js/test.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+/*Start NavBar*/
+.navbar{
+    background-color: #FFF;
+    border: none;
+}
+.navbar-form .form-control{
+        margin-top: 16px;
+        margin-left: 93px;
+        border-radius: 0;
+}
+.navbar .fa{
+    font-size: 43px;
+    color: #a4a5a4;
+    border-left: 1px solid #e9eae9;
+    padding-left: 6px;
+}
+@media(max-width: 760px){
+.navbar-form .form-control{
+        width:40%;  
+}   
+}
+/*End NavBar*/
+
+/*Start Icons*/
+.icons ul{
+    list-style: none;
+    float: right;
+    font-size: 30px;
+}
+
+/*End Icons*/
+div.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tabcontent{
+    border:none;
+}
+.tabcontent .form-control{
+    max-width: 20%;
+    display: inline-block;
+    border-radius: 0;
+}
+
+.tabcontent .left p, .med p span{
+    font-weight: bold;
+}
+.tabcontent .left .location{
+    font-weight: normal;
+    color: #8dc6c7;
+}
+.tabcontent .right button{
+margin-top: 11px;
+    width: 99%;
+    height: 45px;
+    background-color: rgba(240, 248, 255, 0);
+    border: 1px solid #8dc6c7;
+    color: #8dc6c7;
+}
+.tabcontent .right button:hover{
+    background-color: #1b8d8f;
+    
+    color: #FFF;
+}
+.tabcontent .form{
+
+}
+.tabcontent .course, .form{
+    border-bottom:1px solid  #8dc6c7;
+    padding-bottom: 10px;
+    padding-top: 10px;    
+}
+.tabcontent .course:hover{
+    background-color: #ebf8fb;
+}
+
+/*Start session-list Section*/
+.tabcontent p{
+    font-weight: bold;
+    font-size: 20px; 
+}
+.tabcontent p span{
+    font-weight: normal;
+    font-size: 12px; 
+}
+.tabcontent h3{
+    color:  #54aaab;
+}
+.tabcontent .right{
+    border-bottom: 1px solid  #8dc6c7;
+    margin-top: 10px;
+}
+
+/*End session-list Section*/
+.attendance .right button {
+    margin-top: -2px;
+    width: 75px;
+    height: 35px;
+        background-color: rgba(240, 248, 255, 0);
+    border: 1px solid #8dc6c7;
+    color: #8dc6c7;
+}
+
+.attendance .right{
+    
+         border-bottom: 1px solid #8dc6c7;
+    padding-bottom: 26px;
+    border-left: 1px solid #8dc6c7;
+    margin-top: auto;
+}
+.attendance .l{    
+    border-left: none;
+}
+.attendance .rb button, label{
+    margin-top: 11px;
+    width: 58%;
+
+}
+.attendance .mb button {
+    background-color: #1b8d8f;
+} 
+.attendance .mb button:last-child {
+    background-color: #ff3480;
+} 
+.attendance img{
+    padding-top: 10px;
+    border-radius: 50%;
+}
+
+@media(max-width: 991px){
+ .attendance .right{
+    
+         border-bottom: 1px solid #8dc6c7;
+    padding-bottom: 26px;
+    border-left:none;
+    margin-top: auto;
+}   
+}
+/*Start Mark Attendance Section*/
+
+/*End Mark Attendance Section*/
+.bold{
+    font-weight: bold;
+}
+.normal{
+    font-weight: normal;
+}
+.color1{
+    color: #8dc6c7;
+}
+.pink{
+    color: #ff3480;
+}
+.circle{
+    border-radius: 50%;
+}
+.course {
+    border-top: 1px solid #cccccc;
+    text-align: center;
+}
+.course h6{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.lastCourse {
+    border-bottom: 1px solid #cccccc;
+}
+.course:hover{
+    background-color: #ebf8fb;
+}
+
+/*pop up stylesheet*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: #8dc6c7;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-body {
+    padding: 2px 16px;
+    background-color:  #ebf8fb;
+}
+.modal-body img{
+    width: 100px;
+    height: 100px;
+}
